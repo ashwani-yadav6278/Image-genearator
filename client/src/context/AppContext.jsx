@@ -14,10 +14,8 @@ const AppContextProvider = (props) => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  const backendUrl =
-    import.meta.env.MODE === "development"
-      ? import.meta.env.VITE_BACKEND_URL
-      : "/";
+
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
   const getCredits = async () => {
     try {
