@@ -28,6 +28,13 @@ app.use(cookieParser())
 app.use('/api/auth',authRoute)
 
 app.use('/api/image',imageRouter)
+app.get("/",(req,res)=>{
+  res.send({
+    activeStatus:true,
+    message:"Backend Deployed Successfully",
+    error:false,
+  })
+})
 
 app.get("/hello",(req,res)=>{
   res.send("hello world")
