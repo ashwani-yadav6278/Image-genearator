@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 const allowedOrigins = [
-  "http://localhost:5173"
+  "http://localhost:5173","https://full-stack-chatpp-chatty.netlify.app"
    
 ];
 app.use(cors({
