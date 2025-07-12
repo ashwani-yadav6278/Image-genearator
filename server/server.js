@@ -29,7 +29,7 @@ app.use('/api/auth',authRoute)
 
 app.use('/api/image',imageRouter)
 
-app.get("/api/auth/",(req,res)=>{
+app.get("/api/auth",(req,res)=>{
   res.send({
     activeStatus:true,
     message:"Backend Deployed Successfully",
