@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 const allowedOrigins = [
-  "http://localhost:5173","https://golden-bunny-4e3aa4.netlify.app/"
+  "http://localhost:5173","https://golden-bunny-4e3aa4.netlify.app"
    
 ];
 app.use(cors({
