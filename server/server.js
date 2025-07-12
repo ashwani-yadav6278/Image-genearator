@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 const allowedOrigins = [
-  "http://localhost:5173","https://golden-bunny-4e3aa4.netlify.app"
+  "http://localhost:5173","https://full-stack-chatpp-chatty.netlify.app"
    
 ];
 app.use(cors({
@@ -29,8 +29,17 @@ app.use('/api/auth',authRoute)
 
 app.use('/api/image',imageRouter)
 
+app.get("/api/auth/",(req,res)=>{
+  res.send({
+    activeStatus:true,
+    message:"Backend Deployed Successfully",
+    error:false,
+  })
+})
 
-
+app.get("/hello",(req,res)=>{
+  res.send("hello world")
+})
 
 
 
