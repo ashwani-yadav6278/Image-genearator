@@ -15,8 +15,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 const allowedOrigins = [
- "https://image-genearator-65vu.vercel.app",  // preview frontend
-  "https://image-genearator.vercel.app",       // frontend main
+ "https://image-genearator-65vu.vercel.app",
+
   "http://localhost:5173"
 ];
 app.use(cors({
