@@ -34,8 +34,9 @@ app.get("/", (req, res) => {
   res.send("hello from vercel");
 });
 
-
-  app.listen(PORT, () => {
-    console.log(`server is running on port: ${PORT}`);
-    connectDB();
-  });
+connectDB();
+export default app;
+  // app.listen(PORT, () => {
+  //   console.log(`server is running on port: ${PORT}`);
+  //   connectDB();
+  // });
