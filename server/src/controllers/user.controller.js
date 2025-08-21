@@ -41,7 +41,7 @@ export const registerUser = async (req, res) => {
       return res.status(400).json({ msg: "Failed to create user" });
     }
   } catch (error) {
-    console.log("Error in register Controller:", error.message);
+    console.log("Error in register Controller:", error);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
@@ -76,7 +76,7 @@ export const loginUser = async (req, res) => {
       },
     });
   } catch (error) {
-    console.log("Error in login controller:", error.message);
+    console.log("Error in login controller:", errore);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
