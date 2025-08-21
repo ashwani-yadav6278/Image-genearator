@@ -30,7 +30,7 @@ app.use('/api/auth',authRoute)
 
 app.use('/api/image',imageRouter)
 
-app.get("/", (req, res) => {
+app.get("/hello", (req, res) => {
   res.send("heloo vercel");
 });
 
