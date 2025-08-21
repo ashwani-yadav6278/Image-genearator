@@ -30,9 +30,7 @@ app.use('/api/auth',authRoute)
 
 app.use('/api/image',imageRouter)
 
-app.get("/", (req, res) => {
-  res.send("heloo");
-});
+
 
 
   app.listen(PORT, () => {
