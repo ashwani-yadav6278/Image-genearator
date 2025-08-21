@@ -30,7 +30,9 @@ app.use('/api/auth',authRoute)
 
 app.use('/api/image',imageRouter)
 
-
+app.get("/", (req, res) => {
+  res.send("hello from vercel");
+});
 
 
   app.listen(PORT, () => {
