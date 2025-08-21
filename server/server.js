@@ -30,14 +30,9 @@ app.use('/api/auth',authRoute)
 
 app.use('/api/image',imageRouter)
 
-app.get('/',(req,res)=>{
-  res.send({
-    message:"Welcome to the server",
-    status:200,
-    error:false,
-    success:true
-  })
-})
+app.get("/", (req, res) => {
+  res.json({ success: true, message: "Backend running on Vercel 🚀" });
+});
 
 
 connectDB().then(() => {
