@@ -15,7 +15,7 @@ const AppContextProvider = (props) => {
   const navigate = useNavigate();
 
 
-    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5050/";
 
   const getCredits = async () => {
     try {
