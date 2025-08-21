@@ -31,7 +31,7 @@ app.use('/api/auth',authRoute)
 app.use('/api/image',imageRouter)
 
 app.get("/", (req, res) => {
-  res.json({ success: true, message: "Backend running on Vercel 🚀" });
+  res.send("hello from vercel").json({ success: true, message: "Backend running on Vercel 🚀" });
 });
 
 
