@@ -30,14 +30,12 @@ app.use('/api/auth',authRoute)
 
 app.use('/api/image',imageRouter)
 
-app.get("/hello", (req, res) => {
-  res.send("heloo vercel");
+app.get("/", (req, res) => {
+  res.send("heloo");
 });
 
-connectDB();
-export default app;
-// connectDB().then(() => {
-//   app.listen(PORT, () => {
-//     console.log(`server is running on port: ${PORT}`);
-//   });
-// });
+
+  app.listen(PORT, () => {
+    console.log(`server is running on port: ${PORT}`);
+    connectDB();
+  });
